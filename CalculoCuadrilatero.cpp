@@ -2,22 +2,22 @@
 #include <iostream>
 
 int main(){
-    cuadrilatero cuadrado((0,0),(0,1),(1,1),(1,0));
+    cuadrilatero cuadrado(Punto (0,0),Punto (0,1),Punto (1,1), Punto(1,0));
     cuadrado.Describe();
 
-    cuadrilatero rectangulo((1,2),(1,-2),(-1,-2),(-1,2));
+    cuadrilatero rectangulo(Punto (1,2),Punto (1,-2),Punto (-1,-2),Punto (-1,2));
     rectangulo.Describe();
 
-    cuadrilatero rombo((1,1),(1,0),(0,-1),(-1,0));
+    cuadrilatero rombo(Punto (1,1),Punto (1,0),Punto (0,-1),Punto (-1,0));
     rombo.Describe();
 
-    cuadrilatero romboide((1,1),(1,0),(0,-2),(-1,0));
+    cuadrilatero romboide(Punto (1,1),Punto (1,0),Punto (0,-2),Punto (-1,0));
     romboide.Describe();
 
-    cuadrilatero trapecio((1,2),(2,0),(-2,0),(-1,2));
+    cuadrilatero trapecio(Punto (1,2),Punto (2,0),Punto (-2,0),Punto (-1,2));
     trapecio.Describe();
 
-    cuadrilatero irregular((1,2),(1,0),(-1,-1),(0,1));
+    cuadrilatero irregular(Punto (1,2),Punto (1,0),Punto (-1,-1),Punto (0,1));
     irregular.Describe();
 
 }
